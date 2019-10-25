@@ -1484,3 +1484,10 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 5522)
 
 
+Started GET "/" for ::1 at 2019-10-24 21:52:52 -0700
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms | Allocations: 5526)
+
+
