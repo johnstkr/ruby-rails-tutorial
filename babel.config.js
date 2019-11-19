@@ -26,7 +26,11 @@ module.exports = function(api) {
         }
       ],
       (isProductionEnv || isDevelopmentEnv) && [
+<<<<<<< HEAD
         require('@babel/preset-env').default,
+=======
+        '@babel/preset-env',
+>>>>>>> 36e882ace5a4a0d7012d079b46cae4df6acd3d9a
         {
           forceAllTransforms: true,
           useBuiltIns: 'entry',
@@ -37,24 +41,41 @@ module.exports = function(api) {
       ]
     ].filter(Boolean),
     plugins: [
+<<<<<<< HEAD
       require('babel-plugin-macros'),
       require('@babel/plugin-syntax-dynamic-import').default,
       isTestEnv && require('babel-plugin-dynamic-import-node'),
       require('@babel/plugin-transform-destructuring').default,
       [
         require('@babel/plugin-proposal-class-properties').default,
+=======
+      'babel-plugin-macros',
+      '@babel/plugin-syntax-dynamic-import',
+      isTestEnv && 'babel-plugin-dynamic-import-node',
+      '@babel/plugin-transform-destructuring',
+      [
+        '@babel/plugin-proposal-class-properties',
+>>>>>>> 36e882ace5a4a0d7012d079b46cae4df6acd3d9a
         {
           loose: true
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-proposal-object-rest-spread').default,
+=======
+        '@babel/plugin-proposal-object-rest-spread',
+>>>>>>> 36e882ace5a4a0d7012d079b46cae4df6acd3d9a
         {
           useBuiltIns: true
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-transform-runtime').default,
+=======
+        '@babel/plugin-transform-runtime',
+>>>>>>> 36e882ace5a4a0d7012d079b46cae4df6acd3d9a
         {
           helpers: false,
           regenerator: true,
@@ -62,7 +83,11 @@ module.exports = function(api) {
         }
       ],
       [
+<<<<<<< HEAD
         require('@babel/plugin-transform-regenerator').default,
+=======
+        '@babel/plugin-transform-regenerator',
+>>>>>>> 36e882ace5a4a0d7012d079b46cae4df6acd3d9a
         {
           async: false
         }
