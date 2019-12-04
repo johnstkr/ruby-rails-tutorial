@@ -11,11 +11,7 @@
 require "rubygems"
 
 m = Module.new do
-<<<<<<< HEAD
     module_function
-=======
-  module_function
->>>>>>> 36e882ace5a4a0d7012d079b46cae4df6acd3d9a
 
   def invoked_as_script?
     File.expand_path($0) == File.expand_path(__FILE__)
